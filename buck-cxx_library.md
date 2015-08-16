@@ -56,9 +56,8 @@
 ##例子
 
 ````
+# 包含一个 .cpp 文件和他的头的规则，也有额外的标记
 
-# A rule that includes a single .cpp file and its corresponding header and
-# also supplies an additional flag for compilation.
 
 cxx_library(
   name = 'fileutil',
@@ -73,7 +72,7 @@ cxx_library(
   ],
 )
 
-# A rule that defines explicit names for its headers
+# 定义了其头文件的显式名称的规则
 
 cxx_library(
   name = 'mathutils',
@@ -92,7 +91,7 @@ cxx_library(
   ],
 )
 
-# A rule that uses different headers and sources per platform
+# 一种使用不同的头和源文件的规则
 
 cxx_library(
   name = 'vector',

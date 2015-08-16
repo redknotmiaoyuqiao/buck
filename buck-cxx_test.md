@@ -28,7 +28,8 @@
 ##例子
 
 ````
-# A rule that builds and runs C/C++ test using gtest.
+# 一个使用 gtest 来构建和运行 C/C++ 的规则
+
 cxx_test(
   name = 'echo_test',
   srcs = [
